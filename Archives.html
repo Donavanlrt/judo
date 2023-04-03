@@ -19,7 +19,7 @@
                 <div class="menu-header">
                     <img class="logo" src="/home-img/logo.png" alt="">
                     <li>
-                        <a class="menu1" href="home.html">Accueil</a>
+                        <a class="menu1" href="index.html">Accueil</a>
                     </li>
                     <li>
                         <a class="menu1" href="LeClubPage.html">Le Club</a>
