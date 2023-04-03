@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: outfit;
+}
+
+/* ----- HEADER ----- */
+
+.header {
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+
+.header-mobile, .menu-header-mobile-open {
+    display: none;
+}
+
+#nav-icon3 span {
+    display: none;
+    position: absolute;
+    height: 6px;
+    width: 40px;
+    background: black;
+    border-radius: 5px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#nav-icon3 span:nth-child(1) {
+    top: 26px;
+  }
+  
+  #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 42px;
+  }
+  
+  #nav-icon3 span:nth-child(4) {
+    top: 58px;
+  }
+  
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+  
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+
+.logo {
+    width: 50px;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .2s ease-in-out;
+}
+
+li {
+    list-style: none !important;
+}
+
+/* ----- BODY ----- */
+
+.body {
+    position: relative;
+    height: 690px;
+    overflow-x: hidden;
+}
+
+.header-title {
+    display: none;
+}
+
+.texxt {
+    display: none;
+}
+
+.body-color {
+    background-color: rgb(25, 76, 167);
+    color: white;
+    width: 45%;
+    height: 676px;
+    position: absolute;
+    z-index: 4;
+    padding: 0px 60px 0px 0px;
+    transition: .2s ease-in-out;
+}
+
+.img1 {
+    width: 90%;
+    position: absolute;
+    left: 285px;
+    height: 676px;
+}
+
+.body .body-text {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 15%;
+    color: white;
+    width: 70%;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.body .body-text2 {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    color: white;
+    width: 75%;
+    font-size: 16px;
+    font-weight: 400;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.body .body-text3 {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 55%;
+    color: white;
+    width: 75%;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.body .body-text4 {
+    position: absolute;
+    right: 0;
+    top: 70%;
+    width: 60%;
+    margin: auto;
+    left: 30%;
+}
+
+.button-contactez-nous {
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    color: #194CA7;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* ----- DEBUT EFFET HOVER ----- */
+
+.body-color:hover {
+    width: 48%;
+}
+
+.menu1:hover {
+    color: #194CA7;
+    border-bottom:3px #194CA7 solid;
+    transition: .2s ease-in-out;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+/* ----- FIN EFFETS HOVER ----- */
+
+
+/* ----- FOOTER ----- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-content: space-around;
+}
+
+.logo-fb, .logo-ytb {
+    width: 50px;
+    height: 50px;
+    padding: 0px 30px 0px 30px;
+}
+
+/* ----- FIN FOOTER ----- */
+
+/* ----- DEBUT RESPONSIVE ----- */
+
+@media (max-width: 576px) {
+
+/* -- MENU BURGER -- */
+
+* {
+    margin: 0;
+}
+
+.header-title {
+    display: flex;
+}
+
+.texxt {
+    display: block;
+}
+  
+.header {
+    padding: 0 12px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+}
+  
+.header-title {
+    line-height: 50px;
+}
+
+ul, li {
+    display: block;
+    z-index: 7;
+}
+
+li {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#menu-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    line-height: 50px;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all .5s;
+}
+  
+#menu-button::after {
+    content: '×';
+}
+
+#menu-button.close {
+    color: black;
+    background: white;
+}
+
+#menu-button.close::after{
+    content: '≡';
+}
+  
+#menu {
+    transition:transform .5s;
+    width: 100%;
+    max-width: 480px;
+    transform: translateY(-300px);
+}
+
+#menu.show-menu {
+    transform: translateY(0px);
+}
+
+/* -- FIN MENU BURGER -- */
+
+.body {
+    height: 800px;
+}
+
+.body-color {
+    width: 100%;
+    height: 65%;
+    padding: 0px 15px 0px 15px;
+}
+
+.menu-header {
+    display: none;
+}
+
+#nav-icon3 span {
+    display: flex;
+}
+
+.menu-header-mobile {
+    padding: 10px 0px 10px 0px;
+    height: 40px;
+    margin: 15px 40px 15px 40px;
+}
+
+.logo-mobile {
+    display: flex;
+    width: 50px;
+    float: right;
+}
+
+.img1 {
+    width: 100%;
+    position: static;
+    height: 200px;
+}
+
+.body .body-text {
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 5%;
+    width: 85%;
+}
+
+.body .body-text2 {
+    width: 95%;
+    top: 25%;
+    padding: 0px 0px 0px 30px;
+}
+
+.body .body-text3 {
+    width: 95%;
+    top: 64%;
+    text-align: center;
+}
+
+.body .body-text4 {
+    top: 80%;
+    width: 100%;
+    text-align: center;
+}
+
+}
+
+/* ----- FIN RESPONSIVE ----- */

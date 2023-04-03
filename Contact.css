@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: outfit;
+}
+
+/* ----- HEADER ----- */
+
+.header {
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+li {
+    list-style: none !important;
+}
+
+/* ----- DEBUT BODY ----- */
+
+.body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #E6E6E6;
+    height: 1200px;
+    padding: 20px 100px 80px 100px;
+}
+
+.contactez {
+    display: flex;
+    border: 2px solid transparent;
+    color: #194CA7;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin: 50px 0px 40px 80px;
+}
+
+.questions {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-shadow: none;
+    margin-left: 80px;
+}
+
+.background-white {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 930px;
+    margin-top: 50px;
+    padding: 40px 81px 40px 80px;
+}
+
+.pm {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 50px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.henin-bmt {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rue-text {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.tel, .localisation, .mel {
+    color: #194CA7;
+    font-weight: 600;
+}
+
+.plan {
+    display: flex;
+    justify-content: center;
+}
+
+.telto, .mailto {
+    text-decoration: none;
+    color: black;
+}
+
+.unequestion {
+    color: #194CA7;
+}
+
+.formulaire {
+    justify-content: center;
+    display: grid;
+    text-align: center;
+}
+
+input.formulaire-name, input.formulaire-mail {
+    border: black 1px solid;
+    border-radius: 5px;
+    width: 360px;
+    height: 40px;
+    padding-left: 15px;
+}
+
+textarea {
+    width: 365px;
+    height: 100px;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.formulaire-button {
+    background-color: #194CA7;
+    color: white;
+    width: 380px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* ----- FIN BODY ----- */
+
+/* ----- EFFETS HOVER ----- */
+
+.menu1:hover {
+    color: #194CA7;
+    border-bottom:3px #194CA7 solid;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+.telto:hover, .mailto:hover {
+    font-weight: 600;
+    color: #194CA7;
+}
+
+/* ----- FIN EFFETS HOVER ----- */
+
+/* ----- FOOTER ----- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-content: space-around;
+}
+
+.logo-fb, .logo-ytb {
+    width: 50px;
+    height: 50px;
+    padding: 0px 30px 0px 30px;
+}
+
+/* ----- FIN FOOTER ----- */
+
+/* ----- DEBUT RESPONSIVE ----- */
+
+@media (max-width: 576px) {
+
+.body {
+    padding: 30px 15px 30px 15px;
+    height: 1000px;
+}
+
+.contactez {
+    display: block;
+    margin: 0;
+    padding: 30px 15px 30px 15px;
+    text-align: center;
+}
+
+.questions {
+    margin: 0;
+    text-align: center;
+}
+
+.background-white {
+    padding: 35px 20px 35px 20px;
+    width: 92%;
+    height: 650px;
+}
+
+.pm {
+    display: flex;
+    align-items: flex-start;
+    padding: 30px 15px 0px 15px;
+}
+
+.phone, .henin-bmt {
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.plan {
+    display: none;
+}
+
+}
+
+
+/* ----- FIN RESPONSIVE ----- */

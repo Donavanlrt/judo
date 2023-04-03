@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: outfit;
+}
+
+/* ----- HEADER ----- */
+
+.header {
+    height: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.menu-header {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+li {
+    list-style: none !important;
+}
+
+/* ----- DEBUT BODY ----- */
+
+.body {
+    overflow-x: hidden;
+    background-color: #E6E6E6;
+    height: 1000px;
+    padding: 80px 100px 80px 100px;
+}
+
+.body-color {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1px 0px 25px 0px;
+    margin-left: 80px;
+}
+
+.how-to-register {
+    display: flex;
+    border: 2px solid transparent;
+    color: #194CA7;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin: 20px 0px 40px 25px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.rdv-dojo {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-shadow: none;
+    margin-left: 25px;
+}
+
+.formalisation-register {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+.prices {
+    display: flex;
+    border: 2px solid transparent;
+    color: #194CA7;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin: 50px 0px 20px 80px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.licence-adhesion {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    margin-left: 80px;
+    display: flex;
+    text-shadow: none;
+}
+
+.judo {
+    display: grid;
+    background-color: white;
+    border: 2px solid transparent;
+    row-gap: 25px;
+    padding: 15px 15px 40px 15px;
+    border-radius: 10px;
+    margin-left: 80px;
+    text-align: center;
+    width: 50%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+    }
+    .div1 { grid-area: 1 / 1 / 2 / 3; }
+
+.jujitsu-taiso {
+    display: grid;
+    background-color: white;
+    border: 2px solid transparent;
+    row-gap: 25px;
+    padding: 15px 15px 40px 15px;
+    border-radius: 10px;
+    margin-left: 25px;
+    text-align: center;
+    width: 50%;
+    box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px;
+    grid-template-rows: repeat(3, 1fr);
+    }
+.div10 { grid-area: 1 / 1 / 2 / 3; }
+
+.judo-jujitsu {
+    display: flex;
+}
+
+.bottom-page {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    display: flex;
+    text-shadow: none;
+    margin: 50px 0px 0px 80px;
+}
+
+/* ----- FIN BODY ----- */
+
+
+/* ----- EFFETS HOVER ----- */
+
+.menu1:hover {
+    color: #194CA7;
+    border-bottom:3px #194CA7 solid;
+}
+
+nav ul li a {
+    padding: 10px;
+}
+
+.judo:hover, .jujitsu-taiso:hover {
+    border: #194CA7 2px solid;
+    font-weight: 600;
+}
+
+.button-reglement:hover {
+    background-color: #3E65AC;
+}
+
+/* ----- FIN EFFETS HOVER ----- */
+
+/* ----- FOOTER ----- */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 10px 0px 10px 0px;
+    align-content: space-around;
+}
+
+.logo-fb, .logo-ytb {
+    width: 50px;
+    height: 50px;
+    padding: 0px 30px 0px 30px;
+}
+
+/* ----- FIN FOOTER ----- */
+
+/* ----- DEBUT RESPONSIVE ----- */
+
+@media (max-width: 576px) {
+
+.body {
+    padding: 30px 15px 30px 15px;
+    height: 980px;
+}
+
+.body-color, .judo {
+    margin: 0;
+    padding: 1px 15px 30px 15px;
+}
+
+.how-to-register, .prices {
+    display: block;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    padding: 1px 15px 30px 15px;
+}
+
+.rdv-dojo, .licence-adhesion {
+    padding: 15px 0px 15px 0px;
+    display: block;
+    text-align: center;
+    margin: 0;
+}
+
+.judo-jujitsu {
+    margin: 0;
+    display: flex;
+}
+
+.bottom-page {
+    margin: 40px 0px 50px 0px;
+    padding: 1px 15px 30px 15px;
+}
+
+
+}
+
+/* ----- FIN RESPONSIVE ----- */
